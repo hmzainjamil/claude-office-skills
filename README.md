@@ -2,11 +2,19 @@
 
 > A curated collection of practical Claude Skills for real-world office tasks. Zero setup required.
 
+<p align="center">
+  <a href="https://github.com/hmzainjamil/claude-office-skills/stargazers"><img src="https://img.shields.io/github/stars/hmzainjamil/claude-office-skills?style=for-the-badge&labelColor=555&color=white" alt="Stars"></a>
+  <a href="https://github.com/hmzainjamil/claude-office-skills/network/members"><img src="https://img.shields.io/github/forks/hmzainjamil/claude-office-skills?style=for-the-badge&labelColor=555&color=white" alt="Forks"></a>
+  <a href="https://github.com/hmzainjamil/claude-office-skills/issues"><img src="https://img.shields.io/github/issues/hmzainjamil/claude-office-skills?style=for-the-badge&labelColor=555&color=white" alt="Issues"></a>
+  <a href="https://github.com/hmzainjamil/claude-office-skills/pulls"><img src="https://img.shields.io/github/issues-pr/hmzainjamil/claude-office-skills?style=for-the-badge&labelColor=555&color=white" alt="PRs"></a>
+  <a href="https://github.com/hmzainjamil/claude-office-skills/commits"><img src="https://img.shields.io/github/last-commit/hmzainjamil/claude-office-skills?style=for-the-badge&labelColor=555&color=white" alt="Last Commit"></a>
+</p>
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Skills](https://img.shields.io/badge/Skills-136+-blue.svg)](#skills)
-[![MCP Tools](https://img.shields.io/badge/MCP_Tools-39-green.svg)](#office-mcp-server)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&labelColor=555)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&labelColor=555)](CONTRIBUTING.md)
+[![Skills](https://img.shields.io/badge/Skills-136+-blue.svg?style=for-the-badge&labelColor=555)](#skills)
+[![MCP Tools](https://img.shields.io/badge/MCP_Tools-39-green.svg?style=for-the-badge&labelColor=555)](#office-mcp-server)
 
 ---
 
@@ -659,3 +667,32 @@ Inspired by:
 **Made with Claude, for everyone who works with documents.**
 
 *Note: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms.*
+
+---
+
+## ☠️ STARTUPS / BUSINESSES
+
+Claude Office Skills in a team or commercial context:
+
+| Use Case | Skill | Business Value |
+|----------|-------|----------------|
+| **Legal tech** | Contract review, NDA triage, clause extraction | Replace junior paralegal reviews at scale |
+| **Accounting SaaS** | Excel DCF, LBO models, variance analysis | Investment-grade models in minutes |
+| **HR platforms** | Onboarding docs, offer letters, performance reviews | Automate 40% of HR document workflows |
+| **Consulting firms** | PowerPoint generation, data storytelling, report writing | Cut deck prep time by 80% |
+| **Real estate** | PDF extraction, form filling, lease analysis | Process 100s of contracts/day |
+| **Healthcare admin** | DICOM/PDF report generation, clinical documentation | Reduce admin burden per provider |
+| **EdTech** | Quiz generation, curriculum planning, grading automation | Scale 1 teacher to 1000 students |
+| **Marketing agencies** | Campaign reports, proposal writing, social content | Daily deliverables without bottlenecks |
+
+> 136+ skills. Zero infra. Runs in Claude Code locally — no API costs beyond Claude itself.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hmzainjamil/claude-office-skills&type=Date)](https://star-history.com/#hmzainjamil/claude-office-skills&Date)
+
+---
+
+Built by [HMZ](https://github.com/hmzainjamil)
