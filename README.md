@@ -18,6 +18,39 @@
 
 ---
 
+## CONCEPTS
+
+| Concept | Description |
+|---|---|
+| **Office MCP Server** | 39-tool MCP server for PDF, Excel, Word, PPTX, and conversion ops via Model Context Protocol |
+| **Skills** | 136+ Claude skill files covering legal, HR, finance, operations, and communication tasks |
+| **Knowledge Base** | Layered domain knowledge (jurisdictions, industries, custom rules) loaded at inference time |
+| **PDF Module** | Extract, merge, split, compress, watermark, OCR — 10 tools, zero external dependencies |
+| **Conversion Pipeline** | xlsx⇔csv, docx⇔md, json→xlsx, batch multi-format conversion in one command |
+| **Jurisdiction Layer** | US Federal, California, China, EU legal overlays applied per-skill via YAML config |
+| **Claude Code Integration** | Skills installed via `claude skills install` and invoked inline in any chat session |
+
+## 🔥 Hot Commands
+
+```bash
+# Install all office skills into Claude Code
+claude skills install ./skills/
+
+# Start the Office MCP server
+cd mcp-servers/office-mcp && npm install && npm run build
+# Add to Claude Code: claude mcp add office-mcp node mcp-servers/office-mcp/dist/index.js
+
+# Run PDF OCR on a document
+# Via MCP tool: pdf_extract_text with ocr:true
+
+# Batch convert directory of docx → markdown
+# Via MCP tool: convert_batch with format:"docx-to-md" and source_dir:"./docs"
+```
+
+## ■ tip
+> Skills are YAML-defined prompt overlays — edit `skills/legal/nda-review.yaml` to add your firm's clause checklist without touching any code. Source: [Office MCP README](./office-mcp/SKILL.md)
+
+
 ## 🚀 NEW: Office MCP Server
 
 **39 fully-implemented tools** for Office document operations via MCP (Model Context Protocol).
@@ -696,3 +729,4 @@ Claude Office Skills in a team or commercial context:
 ---
 
 Built by [HMZ](https://github.com/hmzainjamil)
+
