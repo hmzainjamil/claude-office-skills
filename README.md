@@ -1,5 +1,9 @@
 # claude-office-skills
 
+<!-- HMZ PORTFOLIO STANDARD -->
+> Portfolio status: active · Visibility: public · Source of truth: current repository source.
+<!-- END HMZ PORTFOLIO STANDARD -->
+
 > **Word / Excel / PowerPoint / PDF generation skills for Claude — investor-grade docs at agent speed** — Skills that teach Claude to build production Office documents. Pixel-correct margins, brand-locked colors, no broken column math. Backed by python-docx, openpyxl, python-pptx, reportlab.
 
 <p align="center">
