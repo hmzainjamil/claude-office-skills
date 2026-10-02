@@ -57,5 +57,5 @@ knowledge:
 
 ## See Also
 
-- [MCP Knowledge Guide](../mcp-servers/office-mcp/knowledge/README.md)
-- [Knowledge Loader Implementation](../mcp-servers/office-mcp/src/knowledge/loader.ts)
+- [MCP Knowledge Guide](../../mcp-servers/office-mcp/knowledge/README.md)
+- [Knowledge Loader Implementation](../../mcp-servers/office-mcp/src/knowledge/loader.ts)
