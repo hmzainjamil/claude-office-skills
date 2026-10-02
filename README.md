@@ -1,158 +1,39 @@
-# claude-office-skills
+# Claude Office Skills
 
-> **Word / Excel / PowerPoint / PDF generation skills for Claude — investor-grade docs at agent speed** — Skills that teach Claude to build production Office documents. Pixel-correct margins, brand-locked colors, no broken column math. Backed by python-docx, openpyxl, python-pptx, reportlab.
+A collection of Claude-oriented skill folders, shared reference material, and an Office MCP server project. Skills are primarily Markdown guidance; the repository also contains executable code under `mcp-servers/office-mcp` and helper scripts. Read the relevant skill and tool implementation before use.
 
-<p align="center"><a href="https://github.com/hmzainjamil/claude-office-skills">Repository</a> · <a href="https://github.com/hmzainjamil/claude-office-skills/commits/main">Commits</a> · <a href="https://github.com/hmzainjamil/claude-office-skills/issues">Issues</a></p>
-<p align="center"><img alt="Visibility" src="https://img.shields.io/badge/visibility-public-blue"> <img alt="Documentation" src="https://img.shields.io/badge/documentation-deep%20editorial-lightgrey"> <img alt="Lifecycle" src="https://img.shields.io/badge/lifecycle-active-success"></p>
+The [skills index](SKILLS_INDEX.md) lists categories and examples. Its count describes the index and may not reflect active, complete, or verified skills.
 
-<!-- HMZ DEEP README v1 -->
+## Repository map
 
-## At a glance
-
-| Field | Current state |
+| Path | Purpose |
 |---|---|
-| Repository | claude-office-skills |
-| Visibility | Public |
-| Lifecycle | Active |
-| Evidence basis | Current repository documentation and source-visible material |
+| [SKILLS_INDEX.md](SKILLS_INDEX.md) | Skill catalog and category index |
+| [contract-review/](contract-review/) | Contract review skill and guide |
+| [invoice-generator/](invoice-generator/) | Invoice drafting skill and guide |
+| [resume-tailor/](resume-tailor/) | Resume tailoring skill and guide |
+| [official-skills/](official-skills/) | References and guides to separately maintained skills |
+| [mcp-servers/office-mcp/](mcp-servers/office-mcp/) | Office document MCP server source, package scripts, and dependencies |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution format and skill template guidance |
+| [LICENSE](LICENSE) | Root MIT license; check individual materials for additional terms |
 
-## Why this exists
+Examples in this repository do not establish professional, legal, financial, tax, or employment advice. Review generated documents against source materials and qualified human judgment.
 
-**Word / Excel / PowerPoint / PDF generation skills for Claude — investor-grade docs at agent speed** — Skills that teach Claude to build production Office documents. Pixel-correct margins, brand-locked colors, no broken column math. Backed by python-docx, openpyxl, python-pptx, reportlab.
+## Using a skill
 
-The README focuses on document-generation capabilities, library boundaries, formatting behavior, and reproducibility instead of unsupported claims about pixel-perfect or investor-grade output.
+Open the selected folder's `SKILL.md` and README. Many skills are plain instructions that can be copied into an assistant conversation. The MCP server is a separate software component with its own dependencies and commands. This repository does not define one root package installation command for all content.
 
-## 🧠 CONCEPTS
+Before using the Office MCP server, follow its own [package documentation](mcp-servers/office-mcp/README.md) and inspect its tools and dependencies. Do not supply confidential documents or credentials until you understand where processing occurs and what gets stored or transmitted.
 
-| Concept | Location | Description |
-|---|---|---|
-| **EMU units** | `amazon-seller/amazon-seller` | Real implementation of emu units in `amazon-seller` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/amazon-seller/amazon-seller) |
-| **Column math** | `architecture.png` | Real implementation of column math in `architecture.png` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/architecture.png) |
-| **Font fallback** | `customer-success/customer-success` | Real implementation of font fallback in `customer-success` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/customer-success/customer-success) |
-| **Platypus flow** | `install.sh` | Real implementation of platypus flow in `install.sh` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/install.sh) |
-| **Cell merge** | `mcp-servers/office-mcp/create_test_pdf.js` | Real implementation of cell merge in `create_test_pdf.js` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/create_test_pdf.js) |
-| **Slide layouts** | `mcp-servers/office-mcp/knowledge/base/completeness.json` | Real implementation of slide layouts in `completeness.json` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/knowledge/base/completeness.json) |
-| **Image embed** | `mcp-servers/office-mcp/knowledge/base/jurisdictions/china.json` | Real implementation of image embed in `china.json` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/knowledge/base/jurisdictions/china.json) |
-| **Header/footer** | `mcp-servers/office-mcp/knowledge/base/jurisdictions/eu.json` | Real implementation of header/footer in `eu.json` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/knowledge/base/jurisdictions/eu.json) |
-| **Page break** | `mcp-servers/office-mcp/knowledge/base/jurisdictions/us.json` | Real implementation of page break in `us.json` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/knowledge/base/jurisdictions/us.json) |
-| **Brand palette** | `mcp-servers/office-mcp/knowledge/base/risk_patterns.json` | Real implementation of brand palette in `risk_patterns.json` · [Source](https://github.com/hmzainjamil/claude-office-skills/blob/main/mcp-servers/office-mcp/knowledge/base/risk_patterns.json) |
+## Document review
 
-## ⚙️ HOW IT WORKS
+Generated Word, Excel, PowerPoint, and PDF files can contain calculation, formatting, citation, and compatibility errors. Check calculations independently, confirm source references, and inspect exported files in the intended application before delivery. No claim of pixel-perfect rendering or error-free output is made.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                      Input                               │
-│  User prompt / CLI / API call                                          │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                   Trigger detect                       │
-│  Detect intent from prompt → activate document generation path                                  │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                   Load context                       │
-│  Pull relevant files, schemas, memory · document generation idioms loaded                                  │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                   Execute + verify                       │
-│  Run primary action · post-validate · emit structured output                                  │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-┌───────────────────────▼─────────────────────────────────┐
-│                    Output                                │
-│  Validated artifact (code/doc/data) + audit trail                                         │
-└─────────────────────────────────────────────────────────┘
-```
+## Security and privacy
 
-## 🚀 INSTALL
+Skills may handle contracts, resumes, invoices, financial data, and other sensitive documents. See [SECURITY.md](SECURITY.md) before using them. Use synthetic examples for initial trials and keep credentials and client data out of commits and logs.
 
-```bash
-# Clone
-git clone https://github.com/hmzainjamil/claude-office-skills.git
-cd claude-office-skills
 
-# Install dependencies
-git clone https://github.com/hmzainjamil/claude-office-skills && cd claude-office-skills
+## README index
 
-# Configure
-cp .env.example .env
-# Edit .env with your keys
-
-# Verify
-ls -la && cat README.md | head -30
-```
-
-## 📟 USAGE
-
-## ⚙️ CONFIGURATION
-
-| Option | Default | Description |
-|---|---|---|
-| `LOG_LEVEL` | `info` | Verbosity: debug/info/warn/error |
-| `CACHE_DIR` | `~/.cache` | Local cache path |
-| `MAX_RETRIES` | `3` | Retries on transient failure |
-| `TIMEOUT_MS` | `30000` | Per-call timeout |
-| `API_KEY` | `(required)` | Provider API key |
-| `BATCH_SIZE` | `10` | Batch chunk size |
-| `PARALLEL` | `4` | Worker concurrency |
-| `OUTPUT_DIR` | `./out` | Where outputs land |
-| `TELEMETRY` | `false` | Phone-home metrics |
-| `DEBUG` | `false` | Verbose stack traces |
-
-## 🧪 TESTING
-
-```bash
-# Run all tests
-make test
-
-# Run with coverage
-make coverage
-
-# Run specific test
-make test ONLY=path/to/test
-
-# Integration tests
-make test-integration
-```
-
-| Test suite | Coverage | Runtime |
-|---|---|---|
-| Unit | 91%% | 8s |
-| Integration | 74%% | 42s |
-| E2E | 38%% | 3m |
-| Total | 82%% | ~4m |
-
-## 🔐 SECURITY
-
-- Never commit `.env` or API keys
-- Use least-privilege scopes
-- Rotate tokens monthly
-- Audit MCP tool permissions before granting
-
-```bash
-# Scan for accidentally committed secrets
-git diff --staged | grep -iE "key|secret|token|password"
-```
-
-Report vulnerabilities → [Security policy](SECURITY.md)
-
-## Limitations
-
-- Rendering varies across Office, PDF, and platform environments.
-- A generation library does not guarantee identical rendering everywhere.
-- Quality claims require actual artifact inspection and repeatable tests.
-
-## 🔗 RELATED
-
-| Repo | Why it matters |
-|---|---|
-| [hmz-claude-code-best-practice](https://github.com/hmzainjamil/hmz-claude-code-best-practice) | Master reference for all Claude Code patterns |
-| [open-design](https://github.com/hmzainjamil/open-design) | Sibling project — open-source design loop |
-| [awesome-claude-code](https://github.com/hmzainjamil/awesome-claude-code) | Sister curation list |
-| [claude-mem](https://github.com/hmzainjamil/claude-mem) | Persistent memory layer |
-
-## Maintainer
-
-[hmzainjamil](https://github.com/hmzainjamil)
+Browse the [recursive README inventory](docs/README.md) for README Markdown files in this branch.

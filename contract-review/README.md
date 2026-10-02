@@ -18,7 +18,7 @@ Then review my contract: [upload file]
 - Identifies 15+ common risk patterns
 - Checks for missing contract elements
 - Provides specific negotiation recommendations
-- Supports US, EU, China, UK jurisdictions
+- References the jurisdictions documented in the skill resources; confirm current jurisdiction coverage before relying on it
 - Works with English and Chinese contracts
 
 ## Example Output
@@ -57,6 +57,10 @@ Then review my contract: [upload file]
 - Add liability cap for breach damages
 - Narrow confidentiality definition with standard exclusions
 ```
+
+## Limits
+
+This skill produces informational issue spotting and draft recommendations, not legal advice or a compliance determination. Jurisdiction coverage and the law can change. Check current primary sources and have qualified counsel review the contract and any proposed changes.
 
 ## See Also
 

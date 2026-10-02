@@ -1,6 +1,6 @@
 # Invoice Generator Skill
 
-Create professional invoices for freelancers and small businesses with proper tax calculations.
+Create invoice drafts for freelancers and small businesses, with arithmetic based on the rates and rules you provide.
 
 ## Quick Start
 
@@ -9,10 +9,14 @@ Create professional invoices for freelancers and small businesses with proper ta
 ## What It Does
 
 - Generates professional invoice layouts
-- Calculates taxes (VAT, GST, sales tax)
+- Applies user-provided tax rates and can draft an estimated tax breakdown
 - Supports multiple currencies
 - Includes payment terms and instructions
 - Works in English and Chinese
+
+## Limits
+
+Tax examples and rates in this repository are illustrative, may be outdated, and do not establish the correct treatment for a transaction. Verify current rules with an accountant or the relevant tax authority. The skill does not file taxes, guarantee local compliance, or process payments. Check calculations and invoice requirements before sending.
 
 ## Example
 
