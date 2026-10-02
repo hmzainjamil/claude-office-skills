@@ -33,3 +33,7 @@ Generated Word, Excel, PowerPoint, and PDF files can contain calculation, format
 
 Skills may handle contracts, resumes, invoices, financial data, and other sensitive documents. See [SECURITY.md](SECURITY.md) before using them. Use synthetic examples for initial trials and keep credentials and client data out of commits and logs.
 
+
+## README index
+
+Browse the [recursive README inventory](docs/README.md) for README Markdown files in this branch.
