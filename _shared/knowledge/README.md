@@ -1,5 +1,7 @@
 # Shared Knowledge Library
 
+> The directory layout and file paths below illustrate a proposed format. They are examples, not a promise that those files exist in this checkout. Check the repository tree and the skill's actual references before using a path. Current Office MCP knowledge files are listed in [its knowledge guide](../../mcp-servers/office-mcp/knowledge/README.md).
+
 This directory contains knowledge files that can be shared across multiple Skills.
 
 ## Directory Structure
