@@ -11,7 +11,7 @@ Generate professional Non-Disclosure Agreements for business meetings, partnersh
 - Creates one-way or mutual NDAs
 - Customizes confidentiality terms
 - Includes standard protective clauses
-- Adapts for different jurisdictions
+- Can incorporate a jurisdiction requested by the user; confirm current local requirements
 - Supports English and Chinese
 
 ## Example
