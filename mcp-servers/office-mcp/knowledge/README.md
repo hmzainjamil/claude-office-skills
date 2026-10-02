@@ -1,5 +1,7 @@
 # Knowledge Base Extension Guide
 
+> This guide mixes current repository files with illustrative extension examples. The checked tree contains `base/risk_patterns.json`, `base/completeness.json`, `base/jurisdictions/{us,california,china,eu}.json`, and `custom/california_employment.json`. The `plugins/` connectors, RAG services, and external legal API integrations below are examples only; this checkout does not establish that those integrations are implemented or configured. Verify the current source before relying on any integration or legal content.
+
 ## Architecture Overview
 
 ```
